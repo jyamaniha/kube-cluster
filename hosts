@@ -1,0 +1,5 @@
+[masters]
+lab-master01 ansible_host=10.0.4.5 ansible_user=azureuser
+
+[workers]
+lab-worker01 ansible_host=10.0.4.6 ansible_user=azureuser

@@ -3,7 +3,7 @@
   tasks:
     - name: install Docker
       yum:
-        name: Docker
+        name: docker
         state: present
         update_cache: true
     

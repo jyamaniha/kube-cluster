@@ -5,8 +5,8 @@ ansible_ssh_pass=
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ansible_sudo_pass=
 
-[masters]
-lab-master01 ansible_host=10.0.4.5 ansible_user=azureuser
+[master]
+lab-master01 ansible_host=10.0.4.5
 
 [workers]
-lab-worker01 ansible_host=10.0.4.6 ansible_user=azureuser
+lab-worker01 ansible_host=10.0.4.6

@@ -1,5 +1,6 @@
 - hosts: master
   become: yes
+  become_user: ansible
   gather_facts: false
   tasks:
     - name: get join command
@@ -13,6 +14,7 @@
 
 - hosts: workers
   become: yes
+  become_user: ansible
   tasks:
     - name: join cluster
       shell: "{{ hostvars['master'].join_command }} --ignore-preflight-errors all  >> node_joined.txt"
